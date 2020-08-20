@@ -3,12 +3,14 @@
 :root {
   --primary-color: rgb(255, 92, 92);
   --primary-variant: #ff2d2d;
-  --secondary-color: #1b9999;
+  --secondary-color: #0dd1d1;
   --on-primary: rgb(250, 250, 250);
   --on-background: rgb(66, 66, 66);
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+  --nav-background: rgb(255 255 255 / 50%);
+  --button-background: rgb(255 255 255 / 30%);
 }
 
 [data-theme="dark"] {
@@ -19,6 +21,8 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
+  --nav-background: rgb(0 0 0 / 40%);
+  --button-background: rgb(0 0 0 / 30%);
 }
 
 html {
@@ -41,7 +45,7 @@ nav {
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
-  background: rgb(255 255 255 / 50%);
+  background: var(--nav-background);
 }
 
 nav a {
@@ -65,34 +69,43 @@ nav a:hover, a:focus {
   top: 0;
 }
 
+/* Home Section */
+#home h1 span {
+  color: var(--primary-color);
+}
 
-/* Home Button to Redirect to Content */
+#home h2 span {
+  color: var(--primary-variant);
+}
+/* -- Home Button to Redirect to Content */
 #home #home-direct {
   display:inline-block;
   padding: .7rem 1.5rem;
   margin: .5rem;
   border: 0.2rem solid #000;
   font-family: Comfortaa, sans-serif;
-  background-color: rgb(0 0 0 / 5%);
+  background-color: var(--button-background);
   text-align: center;
   position: relative;
   border-radius: 20px;
+  animation: buttonAlive 5s infinite 2s;
+  box-shadow: var(--box-shadow);
 }
 #home #home-direct a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-#home #home-direct a:hover, a:focus {
+#home #home-direct:hover a:hover, a:focus {
   color: var(--on-background);
 }
 
-#home #home-direct a i {
+#home #home-direct i {
   animation: arrowRight .7s ease-in-out forwards;
 }
 
-#home #home-direct a:hover i {
+#home #home-direct:hover i {
   animation: arrowDown .7s ease-in-out forwards;
 }
 
@@ -104,6 +117,16 @@ nav a:hover, a:focus {
 @keyframes arrowRight {
   from {transform: rotate(90deg);}
   to {transform: rotate(-360deg);}
+}
+
+@keyframes buttonAlive {
+  0%{top:0rem;}
+  40%{top:0rem;}
+  43%{top:-0.9rem;}
+  46%{top:0rem;}
+  48%{top:-0.4rem;}
+  50%{top:0rem;}
+  100%{top:0rem;}
 }
 
 

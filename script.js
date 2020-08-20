@@ -1,4 +1,4 @@
-// document.documentElement.setAttribute('data-theme', 'dark');
+document.documentElement.setAttribute('data-theme', 'dark');
 window.onscroll = () => {stickyNav()};
 
 const nav = document.getElementById('nav');
