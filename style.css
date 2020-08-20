@@ -68,7 +68,33 @@ nav a:hover, a:focus {
   top: 0;
 }
 
+
+/* ---------------------- All Sections ---------------------- */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: var(--on-background-alt);
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
 /*---------------------- Home Section ----------------------*/
+/* add a background */
+/* #home {
+  
+} */
 #home h1 span {
   color: var(--primary-color);
 }
@@ -80,7 +106,7 @@ nav a:hover, a:focus {
 #home #home-direct {
   display:inline-block;
   padding: .7rem 1.5rem;
-  margin: .5rem;
+  margin: 0;
   border: 0.2rem solid #000;
   font-family: Comfortaa, sans-serif;
   background-color: var(--button-background);
@@ -129,29 +155,41 @@ nav a:hover, a:focus {
 }
 
 
-
-
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* ------------------- Contact Section ------------------- */
+#contact .fab, #contact .far {
+  font-size: 100px;
+  margin: 0px 25px;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
-h1 {
-  font-size: 50px;
-  margin-bottom: 0;
+#contact .fab:hover, #contact .far:hover {
+  
+  animation: jiggle .3s linear forwards;
 }
 
-h2 {
-  color: var(--on-background-alt);
-  font-family: Raleway, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
+@keyframes jiggle {
+  0% {
+    color: var(--primary-color);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+    color: var(--on-background);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    color: var(--on-background);
+  }
 }
 
-/* Dark Mode Toggle */
+/* ------------------- Dark Mode Toggle ------------------- */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -221,6 +259,7 @@ input:checked + .slider::before {
 }
 
 @media screen and (max-width: 600px) {
+  /* Home section */
   #home h1, #home h2 {
     font-size: 30px;
     text-align: center;
@@ -229,10 +268,30 @@ input:checked + .slider::before {
     font-size: 18px;
   }
 
+  #home #home-direct {
+    padding: .3rem .7rem;
+    margin: 0px 10vw;
+    font-size: 16px;
+  }
+
+  #home #home-direct a {
+    font-size: 16px;
+  }
+  #home #home-direct a i {
+    font-size: 20px;
+  }
+
+  /* Navbar */
   #nav {
     font-size: 16px;
   }
   #nav a {
     margin-right: 10px;
+  }
+
+  /* Contact Section */
+  #contact .fab, #contact .far {
+    font-size: 40px;
+    margin: 0px 15px;
   }
 }
