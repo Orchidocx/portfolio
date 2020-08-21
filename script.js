@@ -10,22 +10,17 @@ const navProjectFull = document.getElementById('nav-project-full');
 const navProjectMin = document.getElementById('nav-project-min');
 const navContactFull = document.getElementById('nav-contact-full');
 const navContactMin = document.getElementById('nav-contact-min');
-
 const navFullList = [navProjectFull, navContactFull];
 const navMinList = [navProjectMin, navContactMin];
-// document.documentElement.setAttribute('data-theme', 'dark');
-
 
 // Sticky Nav
 window.onscroll = () => {stickyNav()};
-
 
 const nav = document.getElementById('nav');
 let sticky = window.innerHeight;
 
 function stickyNav() {
   if(window.pageYOffset >= sticky) {
-    // console.log(sticky);
     nav.classList.add('sticky');
   } else {
     nav.classList.remove('sticky');
@@ -34,7 +29,6 @@ function stickyNav() {
 
 function updateSticky() {
   sticky = window.innerHeight;
-  // nav.offsetTop === 0 ? sticky = window.innerHeight : sticky = nav.offsetTop;
 }
 
 // Dark/Light Mode Switch
@@ -82,6 +76,7 @@ window.addEventListener('resize', () => {
   adjustScreenMode();
   updateSticky();
 })
+
 // Check Local Storage for Theme
 const currentTheme = localStorage.getItem('theme');
 if(currentTheme) {
