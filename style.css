@@ -67,6 +67,10 @@ nav a:hover, a:focus {
   top: 0;
 }
 
+#nav-home {
+  margin-left: 25px;
+}
+
 
 /* ---------------------- All Sections ---------------------- */
 section {
