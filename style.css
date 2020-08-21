@@ -89,6 +89,10 @@ h2 {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*---------------------- Home Section ----------------------*/
 /* add a background */
 /* #home {
@@ -153,7 +157,6 @@ h2 {
   100%{top:0rem;}
 }
 
-
 /* ------------------- Contact Section ------------------- */
 #contact .fab, #contact .far {
   font-size: 100px;
@@ -161,6 +164,12 @@ h2 {
   cursor: pointer;
   color: var(--primary-color);
 }
+
+#contact .fab a, 
+#contact .far a {
+  text-decoration: none;
+}
+
 
 #contact .fab:hover, #contact .far:hover {
   
@@ -256,6 +265,7 @@ input:checked + .slider::before {
   font-size: 30px;
   margin-right: 5px;
 }
+
 
 @media screen and (max-width: 600px) {
   /* Home section */
