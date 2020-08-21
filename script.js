@@ -21,14 +21,20 @@ window.onscroll = () => {stickyNav()};
 
 
 const nav = document.getElementById('nav');
-const sticky = nav.offsetTop;
+let sticky = window.innerHeight;
 
 function stickyNav() {
   if(window.pageYOffset >= sticky) {
+    // console.log(sticky);
     nav.classList.add('sticky');
   } else {
     nav.classList.remove('sticky');
   }
+}
+
+function updateSticky() {
+  sticky = window.innerHeight;
+  // nav.offsetTop === 0 ? sticky = window.innerHeight : sticky = nav.offsetTop;
 }
 
 // Dark/Light Mode Switch
@@ -74,6 +80,7 @@ adjustScreenMode();
 toggleSwitch.addEventListener('change', switchTheme);
 window.addEventListener('resize', () => {
   adjustScreenMode();
+  updateSticky();
 })
 // Check Local Storage for Theme
 const currentTheme = localStorage.getItem('theme');
