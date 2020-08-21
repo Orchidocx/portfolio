@@ -6,12 +6,14 @@ let isSmallMode = false;
 
 const toggleIcon = document.getElementById('toggle-icon');
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
+const navAboutFull = document.getElementById('nav-about-full');
+const navAboutMin = document.getElementById('nav-about-min');
 const navProjectFull = document.getElementById('nav-project-full');
 const navProjectMin = document.getElementById('nav-project-min');
 const navContactFull = document.getElementById('nav-contact-full');
 const navContactMin = document.getElementById('nav-contact-min');
-const navFullList = [navProjectFull, navContactFull];
-const navMinList = [navProjectMin, navContactMin];
+const navFullList = [navAboutFull, navProjectFull, navContactFull];
+const navMinList = [navAboutMin, navProjectMin, navContactMin];
 
 // Sticky Nav
 window.onscroll = () => {stickyNav()};
