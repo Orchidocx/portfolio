@@ -15,6 +15,7 @@
 
 [data-theme="dark"] {
   --primary-color: rgb(150, 65, 255);
+  /* --primary-color: rgb(0, 207, 79); */
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
   --on-primary: #000;
@@ -162,6 +163,23 @@ a {
   50%{top:0rem;}
   100%{top:0rem;}
 }
+/* ------------------- About Section ------------------- */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about-title {
+  font-size: 2rem;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 /* ------------------- Contact Section ------------------- */
 #contact .fab, #contact .far {
