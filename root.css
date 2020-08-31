@@ -8,7 +8,7 @@
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
-  --nav-background: rgb(255 255 255 / 50%);
+  --nav-background: rgb(255 255 255 / 80%);
   --button-background: rgb(255 255 255 / 30%);
 }
 
@@ -20,6 +20,6 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
-  --nav-background: rgb(0 0 0 / 40%);
+  --nav-background: rgb(0 0 0 / 80%);
   --button-background: rgb(0 0 0 / 30%);
 }

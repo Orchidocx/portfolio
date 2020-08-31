@@ -1,5 +1,6 @@
 /* ---------------------- Navbar ---------------------- */
 nav {
+  position: absolute;
   z-index: 10;
   font-size: 20px;
   letter-spacing: 3px;
@@ -20,11 +21,6 @@ nav a:hover, a:focus {
   border-bottom: 3px solid;
   color: var(--on-background);
   transition: all .3s;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
 }
 
 #nav-home {
