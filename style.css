@@ -46,10 +46,22 @@ a {
 
 /*---------------------- Home Section ----------------------*/
 /* TODO: add a background */
-/* #home {
-  
-} */
+#home {
+  background-image: url('images/home1-1.png');
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#home h1, #home h2 {
+  max-width: 70vw;
+  padding: 10px 10px;
+  background-color: var(--on-primary);
+}
+
 #home h1 span {
+  
   color: var(--primary-color);
 }
 
