@@ -5,7 +5,7 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .15em; Adjust as needed */
-  width: 75%;
+  width: 100%;
   animation: 
     typing 1s 1s steps(10, end) forwards,
     blink-caret .75s step-end infinite;
@@ -14,7 +14,7 @@
 /* The typing effect */
 @keyframes typing {
   from { opacity: 1; width: 0 }
-  to { opacity: 1; width: 75% }
+  to { opacity: 1; width: 100% }
 }
 
 /* The typewriter cursor effect */

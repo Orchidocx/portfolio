@@ -5,10 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 #home h1, #home h2 {
-  max-width: 70vw;
+  max-width:75vw;
   padding: 10px 10px;
   background-color: var(--on-primary);
 }
@@ -56,6 +57,7 @@
 }
 
 #home .landingContent {
+  justify-content: center;
   opacity: 0;
   animation: landingContent .7s 2.5s forwards;
 }
