@@ -1,0 +1,21 @@
+/* ------------------- About Section ------------------- */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about-title {
+  font-size: 2rem;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 300px;
+}
+

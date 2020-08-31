@@ -108,23 +108,6 @@ a {
   50%{top:0rem;}
   100%{top:0rem;}
 }
-/* ------------------- About Section ------------------- */
-#about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-#about-title {
-  font-size: 2rem;
-}
-.about-container {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-around;
-  align-items: center;
-}
-
 
 /* ------------------- Contact Section ------------------- */
 #contact .fab, #contact .far {
@@ -204,5 +187,13 @@ a {
   #contact .fab, #contact .far {
     font-size: 40px;
     margin: 0px 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    max-width: 325px;
   }
 }
