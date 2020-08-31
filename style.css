@@ -61,76 +61,38 @@ a {
 
 
 #contact .fab:hover, #contact .far:hover {
-  
   animation: jiggle .3s linear forwards;
 }
 
 @keyframes jiggle {
-  0% {
-    color: var(--primary-color);
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(-10deg);
-    color: var(--on-background);
-  }
-  75% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-    color: var(--on-background);
-  }
+  25% {transform: rotate(20deg);}
+  50% {transform: rotate(-10deg);}
+  75% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg); color: var(--on-background);}
 }
 
 
-
+@media screen and (max-width: 900px) {
+  .about-image { max-width: 425px; margin-bottom: 15px;}
+}
 
 @media screen and (max-width: 600px) {
   /* Home section */
-  #home h1, #home h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  #home h2 {
-    font-size: 18px;
-  }
-
-  #home #home-direct {
-    padding: .3rem .7rem;
-    margin: 0px 10vw;
-    font-size: 16px;
-  }
-
-  #home #home-direct a {
-    font-size: 16px;
-  }
-  #home #home-direct a i {
-    font-size: 20px;
-  }
+  #home h1, #home h2 { font-size: 30px; text-align: center;}
+  #home h2 {font-size: 18px;}
+  #home #home-direct { padding: .3rem .7rem; margin: 0px 10vw; font-size: 16px;}
+  #home #home-direct a {font-size: 16px;}
+  #home #home-direct a i {font-size: 20px;}
 
   /* Navbar */
-  #nav {
-    font-size: 16px;
-  }
-  #nav a {
-    margin-right: 10px;
-  }
+  #nav { font-size: 16px; }
+  #nav a { margin-right: 10px; }
 
   /* Contact Section */
-  #contact .fab, #contact .far {
-    font-size: 40px;
-    margin: 0px 15px;
-  }
+  #contact .fab, #contact .far { font-size: 40px; margin: 0px 15px; }
 
-  .about-container {
-    flex-direction: column;
-  }
-
-  .about-image {
-    max-width: 325px;
-  }
+  /* About Section */
+  .about-container {flex-direction: column;}
+  .about-image, .about-content {max-width: 325px;}
 }
+

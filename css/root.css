@@ -10,6 +10,8 @@
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
   --nav-background: rgb(255 255 255 / 80%);
   --button-background: rgb(250 50 50 / 20%);
+  --button-border: rgb(255 92 92 / 40%);
+  --button-box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
 }
 
 [data-theme="dark"] {
@@ -22,4 +24,6 @@
   --background: #121212;
   --nav-background: rgb(0 0 0 / 80%);
   --button-background: rgb(0 0 0 / 30%);
+  --button-border: rgb(150 65 255 / 40%);
+  --button-box-shadow: 0 5px 15px rgb(255 255 255 / 30%);
 }
