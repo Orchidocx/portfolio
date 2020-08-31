@@ -19,24 +19,26 @@
   <title>Jacky Li | Developer</title>
 </head>
 <body>
-  
-  <!-- Begin to remove dark/light mode ability (?) -->
   <!-- Dark Mode Switch -->
   <div class="theme-switch-wrapper">
-    <span id="toggle-icon">
-        <i class="fas fa-sun"></i>
-    </span>
+    <span id="toggle-icon"><i class="fas fa-sun"></i></span>
     <label class="theme-switch">
         <input type="checkbox">
         <div class="slider round"></div>
     </label>
   </div>
 
+  <!-- To Top Button -->
+  <div class="to-top-wrapper">
+    <a title='Home' id='nav-home' href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
   <!-- Navigation -->
   <nav id="nav">
-    <a title='Home' id='nav-home' href="#home"><i class="fas fa-home"></i></a>
-    <a id='nav-about-full' href="#about">ABOUT</a>
-    <a title='About' id='nav-about-min' hidden href="#about"><i class="fas fa-user"></i></a>
+    <a class='ml-25' id='nav-about-full' href="#about">ABOUT</a>
+    <a class='ml-25' title='About' id='nav-about-min' hidden href="#about"><i class="fas fa-user"></i></a>
     <a id='nav-project-full' href="#projects">PROJECTS</a>
     <a title='Projects' id='nav-project-min' hidden href="#projects"><i class="fas fa-code-branch"></i></a>
     <a id='nav-contact-full' href="#contact">CONTACT</a>
@@ -61,9 +63,6 @@
       </a>
   </div>
   </section>
-
-  <!-- begin to change navigation stickies -->
-  
   
   <!-- About Section -->
   <section id="about">

@@ -26,3 +26,39 @@ nav a:hover, a:focus {
 #nav-home {
   margin-left: 25px;
 }
+
+#nav-home img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+/* to top wrapper */
+
+.to-top-wrapper {
+  z-index: 10;
+  opacity: .5;
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+}
+
+.to-top-wrapper i {
+  color: var(--primary-color);
+  padding: 10px;
+  background-color: var(--on-background);
+  border-radius: 50%;
+  
+}
+
+.to-top-wrapper:hover{
+  animation: makeOpaque .3s linear forwards;
+}
+
+@keyframes makeOpaque{
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
