@@ -59,16 +59,8 @@ a {
   text-decoration: none;
 }
 
-
 #contact .fab:hover, #contact .far:hover {
   animation: jiggle .3s linear forwards;
-}
-
-@keyframes jiggle {
-  25% {transform: rotate(20deg);}
-  50% {transform: rotate(-10deg);}
-  75% {transform: rotate(10deg);}
-  100% {transform: rotate(0deg); color: var(--on-background);}
 }
 
 

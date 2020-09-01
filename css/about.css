@@ -4,9 +4,8 @@
   flex-direction: column;
   justify-content: space-around;
 }
-#about-title {
-  font-size: 2rem;
-}
+#about-title {font-size: 2rem;}
+
 .about-container {
   display: flex;
   flex-direction: row;
@@ -15,9 +14,7 @@
   align-items: center;
 }
 
-.about-content {
-  max-width: 400px;
-}
+.about-content .about-img {max-width: 400px;}
 
 .about-info {
   display: flex;
@@ -25,6 +22,8 @@
   justify-content: flex-start;
   height: 700px;
 }
+
+.about-btns {align-self: center;}
 
 .about-btns button {
   font-family: inherit;
@@ -47,4 +46,36 @@
 .about-btn-active {
   font-weight: bold;
   color: var(--primary-color) !important;
+}
+
+.skill-list, .personal-bio, .education-bio {width: 950px;}
+
+.skill-list {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.skill {
+  font-size: 1.5rem;
+  list-style: none;
+  margin-top: 16px;
+  flex: 50%;
+  text-align: center;
+}
+.skill span{font-size: 14px;}
+
+.skill:hover {cursor: default;}
+@media screen and (max-width: 1550px) {.skill-list, #education-info, #personal-info {width: 850px;}}
+@media screen and (max-width: 1400px) {.skill-list, #education-info, #personal-info {width: 650px;}}
+@media screen and (max-width: 1200px) {.skill-list, #education-info, #personal-info {width: 550px;}}
+@media screen and (max-width: 1000px) {.skill-list, #education-info, #personal-info {width: 450px;}}
+@media screen and (min-width: 901px) { 
+  .skill:hover { animation: jiggleSmall .5s linear forwards; }
+  
+}
+@media screen and (max-width: 900px) {
+  .skill-list, #education-info, #personal-info {width: 375px;}
+  .skill {flex: 100%; text-align: left; font-size: 20px;}
+
+  .skill:hover {animation: highlightContent .5s forwards;}
 }
