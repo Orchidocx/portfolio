@@ -4,6 +4,12 @@ const personalBtn = document.getElementById('about-personal-btn');
 const aboutBtns = [skillsBtn, educationBtn, personalBtn];
 let currentActive = skillsBtn;
 
+// Dynamic content insertion for about-info
+// for(const btn of aboutBtns) {
+//   console.log(parseInt(btn.value));
+// }
+
+// Show different content depending on which button clicked
 function changeActive(target) {
   if(currentActive !== target) {
     currentActive.classList.remove('about-btn-active');
