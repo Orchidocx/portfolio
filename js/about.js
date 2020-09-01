@@ -11,5 +11,4 @@ function changeActive(target) {
     currentActive = target;
   }
 }
-
 aboutBtns.forEach(btn => btn.addEventListener('click', () => changeActive(btn)));

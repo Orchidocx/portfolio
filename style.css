@@ -73,10 +73,10 @@ a {
 
 
 @media screen and (max-width: 900px) {
-  .about-image { max-width: 425px; margin-bottom: 15px;}
+  .about-image { max-width: 425px;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   /* Home section */
   #home h1, #home h2 { font-size: 30px; text-align: center;}
   #home h2 {font-size: 18px;}
@@ -93,6 +93,6 @@ a {
 
   /* About Section */
   .about-container {flex-direction: column;}
-  .about-image, .about-content {max-width: 325px;}
+  .about-image, .about-content {max-width: 325px; margin: 15px 0;}
 }
 
