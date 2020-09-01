@@ -10,12 +10,17 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
   align-items: center;
+  padding-left: 20vw;
+  padding-right: 10vw;
 }
 
-.about-content .about-img {max-width: 400px;}
-
+.about-image-container {
+  justify-self: center;
+}
+.about-image {max-width: 400px;}
 .about-info {
   display: flex;
   flex-direction: column;
@@ -65,15 +70,17 @@
 .skill span{font-size: 14px;}
 
 .skill:hover {cursor: default;}
-@media screen and (max-width: 1550px) {.skill-list, #education-info, #personal-info {width: 850px;}}
+@media screen and (max-width: 1550px) {.skill-list, #education-info, #personal-info {width: 750px;} .about-image {width: 400px;}}
 @media screen and (max-width: 1400px) {.skill-list, #education-info, #personal-info {width: 650px;}}
-@media screen and (max-width: 1200px) {.skill-list, #education-info, #personal-info {width: 550px;}}
-@media screen and (max-width: 1000px) {.skill-list, #education-info, #personal-info {width: 450px;}}
+@media screen and (max-width: 1200px) {.skill-list, #education-info, #personal-info {width: 550px;} .about-image {width: 375px;}}
+/* @media screen and (max-width: 1000px) {.skill-list, #education-info, #personal-info {width: 350px;}} */
 @media screen and (min-width: 901px) { 
   .skill:hover { animation: jiggleSmall .5s linear forwards; }
-  
 }
 @media screen and (max-width: 900px) {
+  .about-container {padding-left: 10vw;}
+  .about-image {width: 325px;}
+  
   .skill-list, #education-info, #personal-info {width: 375px;}
   .skill {flex: 100%; text-align: left; font-size: 20px;}
 
