@@ -20,7 +20,7 @@
   <script defer src="js/aos_init.js"></script>
   <title>Jacky Li | Developer</title>
 </head>
-<body>
+<body onload="adjustScreenMode()">
   <!-- Dark Mode Switch -->
   <div class="theme-switch-wrapper">
     <span id="toggle-icon"><i class="fas fa-sun"></i></span>
@@ -32,25 +32,23 @@
 
   <!-- To Top Button -->
   <div class="to-top-wrapper">
-    <a title='Home' id='nav-home' href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
+    <a title='Home' id='nav-home' href="#home"><i class="fas fa-arrow-up"></i></a>
   </div>
 
   <!-- Navigation -->
   <nav id="nav">
-    <a class='ml-25' id='nav-about-full' href="#about">ABOUT</a>
-    <a class='ml-25' title='About' id='nav-about-min' hidden href="#about"><i class="fas fa-user"></i></a>
-    <a id='nav-project-full' href="#projects">PROJECTS</a>
-    <a title='Projects' id='nav-project-min' hidden href="#projects"><i class="fas fa-code-branch"></i></a>
-    <a id='nav-contact-full' href="#contact">CONTACT</a>
-    <a title='Contact' id='nav-contact-min' hidden href="#contact"><i class="fas fa-address-book"></i></a>
+    <a class='ml-25 nav-max' href="#about">ABOUT</a>
+    <a class='nav-max' href="#projects">PROJECTS</a>
+    <a class='nav-max' href="#contact">CONTACT</a>
+
+    <a class='ml-25 nav-min' title='About' hidden href="#about"><i class="fas fa-user"></i></a>
+    <a class='nav-min'title='Projects' hidden href="#projects"><i class="fas fa-code-branch"></i></a>
+    <a class='nav-min'title='Contact' hidden href="#contact"><i class="fas fa-address-book"></i></a>
   </nav>
 
   <!-- Home Section -->
   <section id="home">
     <div class="title-group">
-      
       <div class="typewriter">
         <h1><span>Hello World</span>.</h1>
       </div>
@@ -58,33 +56,26 @@
         <h2>My name is <span>Jacky Li</span>. <br>
           I am a <span>software developer</span>.
         </h2>
-    </div>
+      </div>
       <a type='button' id='home-direct' href="#about">
         Learn More  
         <i class="fas fa-arrow-right"></i>
       </a>
-  </div>
+    </div>
   </section>
   
   <!-- About Section -->
   <section id="about">
     <h1 id="about-title">ABOUT</h1>
-    <!-- First flex row containing image and bio -->
     <div class="about-container">
-      <!-- Image Container -->
+      
+      <!-- Image -->
       <div class="about-content">
-        <!-- img -->
-        <img class="about-image" 
-        src="images/about2-1.png" 
-        alt="Professional photoshoot of Jacky"
-        data-aos="flip-right"
-        data-aos-delay="600"
-        >
+        <img class="about-image" src="images/about2-1.png" alt="Professional photoshoot of Jacky" data-aos="flip-right" data-aos-delay="600">
       </div>
-      <div class="about-content about-info"
-        data-aos="fade-up"
-      >
-        <!-- bio -->
+
+      <!-- Bio/Content -->
+      <div class="about-content about-info" data-aos="fade-up">
         <div class="about-btns">
           <button class="about-btn-active" id="about-skills-btn">Skills</button>
           <button id="about-education-btn">Education</button>
@@ -92,6 +83,7 @@
         </div>
         <p id="about-info"></p>
       </div>
+
     </div>
   </section>
   
@@ -118,20 +110,14 @@
     </div>
   </section>
 
-  <!--
-    Notes:
-    - get sections structured
-    - potentially add blog section
-    - change contact section to footer or add extra footer with contacts
-      - potentially have a contact form instead rather than social/contact links
-  -->
-
+  <!-- footer -->
   <footer class="footer">
     <p>created by Jacky Li</p>
   </footer>
+
   <!-- Scripts -->
   <script src="js/toggleTheme.js"></script>
-  <script src="script.js"></script>
+  <script src="js/navbarMedia.js"></script>
   <script src="js/about.js"></script>
 </body>
 </html>
