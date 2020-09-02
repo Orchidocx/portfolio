@@ -6,6 +6,7 @@
 .project-list {
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
   width: 800px;
 }
 
