@@ -12,6 +12,7 @@
   --button-background: rgb(250 50 50 / 20%);
   --button-border: rgb(255 92 92 / 40%);
   --button-box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  --project-box-shadow: 5px 7px 15px rgb(0 0 0 / 50%);
 }
 
 [data-theme="dark"] {
@@ -26,4 +27,5 @@
   --button-background: rgb(0 0 0 / 30%);
   --button-border: rgb(150 65 255 / 40%);
   --button-box-shadow: 0 5px 15px rgb(255 255 255 / 30%);
+  --project-box-shadow: 5px 7px 15px rgb(255 255 255 / 50%);
 }
