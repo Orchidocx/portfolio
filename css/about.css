@@ -53,7 +53,7 @@
   color: var(--primary-color) !important;
 }
 
-.skill-list, .personal-bio, .education-bio {width: 950px;}
+.skill-list {width: 700px;}
 
 .skill-list {
   display: flex;
@@ -68,21 +68,23 @@
   text-align: center;
 }
 .skill span{font-size: 14px;}
-
 .skill:hover {cursor: default;}
-@media screen and (max-width: 1550px) {.skill-list, #education-info, #personal-info {width: 750px;} .about-image {width: 400px;}}
-@media screen and (max-width: 1400px) {.skill-list, #education-info, #personal-info {width: 650px;}}
-@media screen and (max-width: 1200px) {.skill-list, #education-info, #personal-info {width: 550px;} .about-image {width: 375px;}}
-/* @media screen and (max-width: 1000px) {.skill-list, #education-info, #personal-info {width: 350px;}} */
-@media screen and (min-width: 901px) { 
-  .skill:hover { animation: jiggleSmall .5s linear forwards; }
+
+.education-bio, .personal-bio {width: 650px; line-height: 1.5rem; font-size: 1.2rem;}
+.education-bio a {
+  color: var(--primary-variant);
+  background-color: var(--background);
 }
+
+@media screen and (max-width: 1550px) {.skill-list, #education-info, #personal-info {width: 750px;} .about-image {width: 400px;}}
+@media screen and (max-width: 1400px) {.skill-list, #education-info, #personal-info {width: 650px;} .education-bio, .personal-bio {width: 400px;}}
+@media screen and (max-width: 1200px) {.skill-list, #education-info, #personal-info {width: 550px;} .about-image {width: 375px;}}
+@media screen and (min-width: 901px) { .skill:hover { animation: jiggleSmall .5s linear forwards; }}
 @media screen and (max-width: 900px) {
   .about-container {padding-left: 10vw;}
-  .about-image {width: 325px;}
-  
+  .about-image {width: 325px;}  
   .skill-list, #education-info, #personal-info {width: 375px;}
+  .education-bio, .personal-bio {width: 325px; font-size: 16px;}
   .skill {flex: 100%; text-align: left; font-size: 20px;}
-
   .skill:hover {animation: highlightContent .5s forwards;}
 }
