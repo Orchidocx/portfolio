@@ -45,27 +45,9 @@ a {
 }
 
 
-/* ------------------- Contact Section ------------------- */
-#contact .fab, #contact .far {
-  font-size: 100px;
-  margin: 0px 25px;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
-#contact .fab a, 
-#contact .far a {
-  text-decoration: none;
-}
-
-#contact .fab:hover, #contact .far:hover {
-  animation: jiggle .3s linear forwards;
-}
 
 
-@media screen and (max-width: 900px) {
-  .about-image { max-width: 425px;}
-}
+@media screen and (max-width: 900px) {.about-image { max-width: 425px;}}
 
 @media screen and (max-width: 700px) {
   /* Home section */
