@@ -1,219 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/root.css">
-  <link rel="stylesheet" href="css/keyframes.css">
-  <link rel="stylesheet" href="css/tooltip.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/typewriter.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/darkmode.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/scrollbar.css">
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script defer src="js/aos_init.js"></script>
-  <title>Jacky Li | Software Developer</title>
-</head>
-<body onload="adjustScreenMode()">
-  <!-- Dark Mode Switch -->
-  <div class="theme-switch-wrapper">
-    <span id="toggle-icon"><i class="fas fa-sun"></i></span>
-    <label class="theme-switch">
-        <input type="checkbox">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/typewriter.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/darkmode.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/aos_init.js"></script>
+    <title>Jacky Li | Software Developer</title>
+  </head>
+  <body onload="adjustScreenMode()">
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon"><i class="fas fa-sun"></i></span>
+      <label class="theme-switch">
+        <input type="checkbox" />
         <div class="slider round"></div>
-    </label>
-  </div>
-
-  <!-- To Top Button -->
-  <div class="to-top-wrapper">
-    <a title='Home' id='nav-home' href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-
-  <!-- Navigation -->
-  <nav id="nav">
-    <a class='ml-25 nav-max' href="#about">ABOUT</a>
-    <a class='nav-max' href="#projects">PROJECTS</a>
-    <a class='nav-max' href="#contact">CONTACT</a>
-
-    <a class='ml-25 nav-min' title='About' hidden href="#about"><i class="fas fa-user"></i></a>
-    <a class='nav-min'title='Projects' hidden href="#projects"><i class="fas fa-code-branch"></i></a>
-    <a class='nav-min'title='Contact' hidden href="#contact"><i class="fas fa-address-book"></i></a>
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home">
-    <div class="title-group">
-      <div class="typewriter">
-        <h1><span>Hello World</span>.</h1>
-      </div>
-      <div class="landingContent">
-        <h2>My name is <span>Jacky Li</span>. <br>
-          I am a <span>software developer</span>.
-        </h2>
-      </div>
-      <a type='button' id='home-direct' href="#about">
-        Learn More  
-        <i class="fas fa-arrow-right"></i>
-      </a>
+      </label>
     </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about">
-    <h1 id="about-title">ABOUT</h1>
-    <div class="about-container">
-      
-      <!-- Image -->
-      <div class="about-content about-image-container">
-        <img class="about-image" src="images/about2-1.png" alt="Professional photoshoot of Jacky" data-aos="flip-right" data-aos-delay="600">
-      </div>
 
-      <!-- Bio/Content -->
-      <div class="about-content about-info" data-aos="fade-up">
-        <div class="about-btns">
-          <button class="about-btn-active" id="about-skills-btn" value=0>Skills</button>
-          <button id="about-education-btn" value=1>Education</button>
-          <button id="about-personal-btn" value=2>Personal</button>
+    <!-- To Top Button -->
+    <div class="to-top-wrapper">
+      <a title="Home" id="nav-home" href="#home"
+        ><i class="fas fa-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+      <a class="ml-25 nav-max" href="#about">ABOUT</a>
+      <a class="nav-max" href="#projects">PROJECTS</a>
+      <a class="nav-max" href="#contact">CONTACT</a>
+
+      <a class="ml-25 nav-min" title="About" hidden href="#about"
+        ><i class="fas fa-user"></i
+      ></a>
+      <a class="nav-min" title="Projects" hidden href="#projects"
+        ><i class="fas fa-code-branch"></i
+      ></a>
+      <a class="nav-min" title="Contact" hidden href="#contact"
+        ><i class="fas fa-address-book"></i
+      ></a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="title-group">
+        <div class="typewriter">
+          <h1><span>Hello World</span>.</h1>
         </div>
-        <div id="about-info">
-          <div id="skills-info">
-            <ul class="skill-list">
-              <li class="skill">Frontend<br><span>- HTML5, CSS3, JavaScript(ES6+)</span></li>
-              <li class="skill">Backend<br><span>- Python, Java, Node.js, Express, Firebase</span></li>
-              <li class="skill">Databases <br><span>- MongoDB, Postgres, MySQL</span></li>
-              <li class="skill">React<br><span>- Router, Hooks, Context API, Redux</span></li>
-              <li class="skill">Testing<br><span>- Jest, Mocha, Postman</span></li>
-              <li class="skill">Source Control<br><span>- Git, Github, Agile</span></li>
-              <li class="skill">Deployment <br><span>- Firebase, Heroku, GH Pages</span></li>
-              <li class="skill">UI/UX Design<br><span>(Wireframing, UML, User Stories)</span></li>
-              <li class="skill">Docker</li>
-              <li class="skill">APIs</li>
-              <li class="skill">Additional Skills<br><span>- TypeScript, WordPress, PhP, C, C++</span></li>
-            </ul>
+        <div class="landingContent">
+          <h2>
+            My name is <span>Jacky Li</span>. <br />
+            I am a <span>software developer</span>.
+          </h2>
+        </div>
+        <a type="button" id="home-direct" href="#about">
+          Learn More
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h1 id="about-title">ABOUT</h1>
+      <div class="about-container">
+        <!-- Image -->
+        <div class="about-content about-image-container">
+          <img
+            class="about-image"
+            src="images/about2-1.png"
+            alt="Professional photoshoot of Jacky"
+            data-aos="flip-right"
+            data-aos-delay="600"
+          />
+        </div>
+
+        <!-- Bio/Content -->
+        <div class="about-content about-info" data-aos="fade-up">
+          <div class="about-btns">
+            <button class="about-btn-active" id="about-skills-btn" value="0">
+              Skills
+            </button>
+            <button id="about-education-btn" value="1">Education</button>
+            <button id="about-personal-btn" value="2">Personal</button>
           </div>
-          <div id="education-info" hidden>
-            <p class="education-bio">I am a proud anteater alumni who studied at UC Irvine for 4 years and graduated with a Bachelors of Science degree in computer science with a specialization in information.<br><br>While at UCI, I studied concepts and practices such as algorithms, data structures, networks, system design, and much more.<br><br>Beyond the university life, I continued to expand my knowledge in web technologies. From graduation and on, I've shaped and grown my knowledge and skills through online resources and <a href="#projects">personal projects</a>.<br><br>I continue to strive towards higher education, so my skillset (and portfolio) will continually grow and take form!</p>
-          </div>
-          <div id="personal-info" hidden>
-            <!-- add tooltip potentially -->
-            <p class="personal-bio">On my free time, you can either find me mentoring future CS superstars or developing my next breakthrough project! On that note, aside from personal projects, I am currently working with a small group of friends on a story-driven game using Unity/C#.<br><br>Some of my interests outside of the computer-space include taekwondo, tennis, and hiking. However, if you don't find me in those, you could probably catch me learning guitar, picking up a random skill like juggling, or spending time with my family.</p>
+          <div id="about-info">
+            <div id="skills-info">
+              <ul class="skill-list">
+                <li class="skill">
+                  Frontend<br /><span>- HTML5, CSS3, JavaScript(ES6+)</span>
+                </li>
+                <li class="skill">
+                  Backend<br /><span
+                    >- Python, Java, Node.js, Express, Firebase</span
+                  >
+                </li>
+                <li class="skill">
+                  Databases <br /><span>- MongoDB, Postgres, MySQL</span>
+                </li>
+                <li class="skill">
+                  React<br /><span>- Router, Hooks, Context API, Redux</span>
+                </li>
+                <li class="skill">
+                  Testing<br /><span>- Jest, Mocha, Postman</span>
+                </li>
+                <li class="skill">
+                  Source Control<br /><span>- Git, Github, Agile</span>
+                </li>
+                <li class="skill">
+                  Deployment <br /><span>- Firebase, Heroku, GH Pages</span>
+                </li>
+                <li class="skill">
+                  UI/UX Design<br /><span
+                    >(Wireframing, UML, User Stories)</span
+                  >
+                </li>
+                <li class="skill">Docker</li>
+                <li class="skill">APIs</li>
+                <li class="skill">
+                  Additional Skills<br /><span
+                    >- TypeScript, WordPress, PhP, C, C++</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="education-info" hidden>
+              <p class="education-bio">
+                I am a proud anteater alumni who studied at UC Irvine for 4
+                years and graduated with a Bachelors of Science degree in
+                computer science with a specialization in information.<br /><br />While
+                at UCI, I studied concepts and practices such as algorithms,
+                data structures, networks, system design, and much more.<br /><br />Beyond
+                the university life, I continued to expand my knowledge in web
+                technologies. From graduation and on, I've shaped and grown my
+                knowledge and skills through online resources and
+                <a href="#projects">personal projects</a>.<br /><br />I continue
+                to strive towards higher education, so my skillset (and
+                portfolio) will continually grow and take form!
+              </p>
+            </div>
+            <div id="personal-info" hidden>
+              <!-- add tooltip potentially -->
+              <p class="personal-bio">
+                On my free time, you can either find me mentoring future CS
+                superstars or developing my next breakthrough project! On that
+                note, aside from personal projects, I am currently working with
+                a small group of friends on a story-driven game using
+                Unity/C#.<br /><br />Some of my interests outside of the
+                computer-space include taekwondo, tennis, and hiking. However,
+                if you don't find me in those, you could probably catch me
+                learning guitar, picking up a random skill like juggling, or
+                spending time with my family.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  
-  <!-- Projects Section -->
-  <section id="projects">
-    <h1>Projects</h1>
-    <div class="project-list">
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <a
+            href="https://the-superchat.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/the-superchat.png"
+              alt="The Superchat Main Page"
+            />
+            <div class="project-overlay"><p>The Superchat</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://animetflix-3481c.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/animetflix.png"
+              alt="Animetflix (react deployed with Firebase)"
+            />
+            <div class="project-overlay"><p>Animetflix</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://clone-d5e88.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/amazon-clone.png"
+              alt="Amazon Clone (react deployed with Firebase)"
+            />
+            <div class="project-overlay"><p>Amazon Clone (React)</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://netflix-clone-6ef0f.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/netflix-clone.png"
+              alt="Netflix Clone (react deployed with Firebase)"
+            />
+            <div class="project-overlay"><p>Netflix Clone (React)</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://facebook-messenger-clone-7b5d2.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/facebook-messenger-clone.png"
+              alt="Messenger Clone (react deployed with Firebase)"
+            />
+            <div class="project-overlay"><p>Messenger Clone (React)</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://palette-of-colors.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/react-palettes.png"
+              alt="React Palettes"
+            />
+            <div class="project-overlay"><p>React Palettes</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/zen-ocean"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/projects/zen-ocean.png" alt="Zen Ocean" />
+            <div class="project-overlay"><p>Zen Ocean</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/quote-generator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/dad-quote-generator.png"
+              alt="Quote Generator"
+            />
+            <div class="project-overlay"><p>Dad Quote Generator</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/infinity-scroll"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/infinity-scroll.png"
+              alt="Infinity Scroller"
+            />
+            <div class="project-overlay"><p>Infinity Scroller</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/joke-teller"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/projects/joke-teller.png" alt="Joke Teller" />
+            <div class="project-overlay"><p>Joke Teller</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/custom-countdown/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/projects/custom-countdown.png"
+              alt="Custom Countdown"
+            />
+            <div class="project-overlay"><p>Custom Countdown</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://orchidocx.github.io/maze-js/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/projects/maze-js.png" alt="Generated Maze" />
+            <div class="project-overlay"><p>Gravity Maze</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <div class="project">
-        <a href="https://animetflix-3481c.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/animetflix.png" alt="Animetflix (react deployed with Firebase)">
-          <div class="project-overlay"><p>Animetflix</p></div>
+    <!-- Contact Section : TODO-->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <br />
+      <div class="social-icons">
+        <a
+          href="http://www.github.com/Orchidocx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github" data-aos="fade-up"></i>
+        </a>
+        <a href="http://linkedin.com/in/jackyli97" target="_blank">
+          <i
+            class="fab fa-linkedin-in"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          ></i>
+        </a>
+        <a href="mailto:lijacky788@gmail.com">
+          <i
+            class="far fa-envelope"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          ></i>
         </a>
       </div>
-      <div class="project">
-        <a href="https://clone-d5e88.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/amazon-clone.png" alt="Amazon Clone (react deployed with Firebase)">
-          <div class="project-overlay"><p>Amazon Clone (React)</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://netflix-clone-6ef0f.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/netflix-clone.png" alt="Netflix Clone (react deployed with Firebase)">
-          <div class="project-overlay"><p>Netflix Clone (React)</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://facebook-messenger-clone-7b5d2.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/facebook-messenger-clone.png" alt="Messenger Clone (react deployed with Firebase)">
-          <div class="project-overlay"><p>Messenger Clone (React)</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://palette-of-colors.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/react-palettes.png" alt="React Palettes">
-          <div class="project-overlay"><p>React Palettes</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/zen-ocean" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/zen-ocean.png" alt="Zen Ocean">
-          <div class="project-overlay"><p>Zen Ocean</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/quote-generator" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/dad-quote-generator.png" alt="Quote Generator">
-          <div class="project-overlay"><p>Dad Quote Generator</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/infinity-scroll" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/infinity-scroll.png" alt="Infinity Scroller">
-          <div class="project-overlay"><p>Infinity Scroller</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/joke-teller" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/joke-teller.png" alt="Joke Teller">
-          <div class="project-overlay"><p>Joke Teller</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/custom-countdown/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/custom-countdown.png" alt="Custom Countdown">
-          <div class="project-overlay"><p>Custom Countdown</p></div>
-        </a>
-      </div>
-      <div class="project">
-        <a href="https://orchidocx.github.io/maze-js/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/maze-js.png" alt="Generated Maze">
-          <div class="project-overlay"><p>Gravity Maze</p></div>
-        </a>
-      </div>
-      
+    </section>
 
-    </div>
-  </section>
+    <!-- footer -->
+    <footer class="footer">
+      <p>created by Jacky Li</p>
+    </footer>
 
-  <!-- Contact Section : TODO-->
-  <section id="contact">
-    <h1>Contact Me</h1>
-    <br>
-    <div class="social-icons">
-      <a href="http://www.github.com/Orchidocx" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github" data-aos="fade-up"></i>
-      </a>
-      <a href="http://linkedin.com/in/jackyli97" target="_blank">
-        <i class="fab fa-linkedin-in" data-aos="fade-up" data-aos-delay="200"></i>
-      </a>
-      <a href="mailto:lijacky788@gmail.com">
-        <i class="far fa-envelope" data-aos="fade-up" data-aos-delay="300"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- footer -->
-  <footer class="footer">
-    <p>created by Jacky Li</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/toggleTheme.js"></script>
-  <script src="js/navbarMedia.js"></script>
-  <script src="js/about.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="js/toggleTheme.js"></script>
+    <script src="js/navbarMedia.js"></script>
+    <script src="js/about.js"></script>
+  </body>
 </html>
